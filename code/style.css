@@ -1,0 +1,17 @@
+body {
+  font-family: 'M PLUS 1p', sans-serif;
+}
+
+#main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.message {
+  font-size: 3.5em;
+  font-weight: bold;
+  font-color: #858585;
+}
+

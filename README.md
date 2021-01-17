@@ -16,7 +16,7 @@ git clone https://github.com/masa0221/docker-web-server-sandbox.git
 
 起動や停止は、以下でディレクトリを移動してから行ってください。
 ```
-cd docker-web-server-sample
+cd docker-web-server-sandbox
 ```
 
 ### 起動

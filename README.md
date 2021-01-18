@@ -43,6 +43,7 @@ docker-compose exec nginx /bin/bash
 ```
 docker-compose exec php-fpm /bin/bash
 ```
+※ `exec` の後に指定する `nignx` や `php-fpm` はサービス名です。 サービス名は `docker-compose ps --services` で表示できます。
 
 終了するには以下を実行してください
 ```

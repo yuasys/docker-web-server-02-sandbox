@@ -11,7 +11,7 @@
 ## 使い方
 ### ダウンロード
 ```
-git clone https://github.com/masa0221/docker-web-server-sandbox.git
+git clone https://github.com/yuasys/docker-web-server-sandbox.git
 ```
 
 起動や停止は、以下でディレクトリを移動してから行ってください。
@@ -21,15 +21,19 @@ cd docker-web-server-sandbox
 
 ### 起動
 ```
-docker-compose up -d
+docker compose up -d
 ```
+※注意 dockerのバージョンが古い場合は`docker-compose up -d`（ハイフンを入れる）
 
 起動後、以下のURLにアクセスして動作を確認できます。  
-http://localhost:8080
+http://localhost:8081
+
+※注意 VPSなどクラウド上のDocker環境で開発している場合はlocalhostの部分を適宜読み替えてください  
+      例：http://xxx.xxxxx.xxx:8081
 
 ### 状態確認
 ```
-docker-compose ps
+docker compose ps
 ```
 StateがUpになっていたらOKです。
 
@@ -37,11 +41,11 @@ StateがUpになっていたらOKです。
 ### コンテナの中に入って操作する
 コンテナが動いているときに以下で、それぞれのコンテナの中で操作することができます。
 ```
-docker-compose exec nginx /bin/bash
+docker compose exec nginx /bin/bash
 ```
 
 ```
-docker-compose exec php-fpm /bin/bash
+docker compose exec php-fpm /bin/bash
 ```
 ※ `exec` の後に指定する `nignx` や `php-fpm` はサービス名です。 サービス名は `docker-compose ps --services` で表示できます。
 
@@ -53,7 +57,7 @@ exit
 
 ### 停止
 ```
-docker-compose down
+docker compose down
 ```
 
 ## 構成

@@ -11,12 +11,12 @@
 ## 使い方
 ### ダウンロード
 ```
-git clone https://github.com/yuasys/docker-web-server-sandbox.git
+git clone https://github.com/yuasys/docker-web-server-02-sandbox.git
 ```
 
 起動や停止は、以下でディレクトリを移動してから行ってください。
 ```
-cd docker-web-server-sandbox
+cd docker-web-server-02-sandbox
 ```
 
 ### 起動

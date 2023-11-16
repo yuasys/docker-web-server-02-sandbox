@@ -28,6 +28,8 @@ docker compose up -d
 起動後、以下のURLにアクセスして動作を確認できます。  
 http://localhost:8081
 
+※注意 ホスト側のポートが重複しないように適宜変更すること。その場合は、先にdocker-compose.ymlのポート設定は変更して、それに合わせてブラウザで呼び出すポート番号を指定する。
+
 ※注意 VPSなどクラウド上のDocker環境で開発している場合はlocalhostの部分を適宜読み替えてください  
       例：http://xxx.xxxxx.xxx:8081
 

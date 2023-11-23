@@ -1,5 +1,4 @@
 <?php
-$title = 'Sample on Docker';
-$greeting = 'こんにちは、Docker！';
+$title = 'Time Converter';
 
 include './internal/base.tpl.html';

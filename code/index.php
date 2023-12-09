@@ -1,4 +1,4 @@
 <?php
 $title = 'Time Converter';
 
-include './internal/base.tpl.html';
+include './internal/base.tpl.php';

@@ -30,6 +30,21 @@ http://localhost:8082
 
 ※注意 ホスト側のポートが重複しないように適宜変更すること。その場合は、先にdocker-compose.ymlのポート設定は変更して、それに合わせてブラウザで呼び出すポート番号を指定する。
 
+```bash
+vi /work/docker-web-server-02-sandbox/docker-compose.yml
+
+(省略)
+
+services:
+  nginx:
+    image: nginx:1.19.6
+    ports:
+      - "8082:80"    ###この行を編集する 例："8083:80"
+
+(省略)
+
+```
+
 ※注意 VPSなどクラウド上のDocker環境で開発している場合はlocalhostの部分を適宜読み替えてください  
       例：http://xxx.xxxxx.xxx:8082
 

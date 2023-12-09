@@ -108,7 +108,7 @@ $ tree
 │   ├── index.php
 │   ├── internal             // code/internal/ 直接アクセスされる必要がないファイルを配置するディレクトリです
 │   │   ├── README.md
-│   │   └── base.tpl.html
+│   │   └── base.tpl.php
 │   └── style.css
 ├── containers               // conteiners/ 作成されるコンテナに配置するファイルを配置しています
 │   └── nginx
@@ -133,5 +133,5 @@ docker-compose restart nginx
 
 ### PHP
 `./code`ディレクトリ以下にPHPファイル、HTMLファイル、CSSファイルを置くと動かすことができます。  
-`base.tpl.html`のように、外部からアクセスされたくないファイルは`internal`ディレクトリ以下に配置すると、直接アクセスできなくなります。  
+`base.tpl.php`のように、外部からアクセスされたくないファイルは`internal`ディレクトリ以下に配置すると、直接アクセスできなくなります。  
 外部に公開しないものは、`internal`以下にファイルを作成してください。  

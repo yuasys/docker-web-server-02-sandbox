@@ -7,17 +7,34 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-left:2rem;
-  padding-right:2rem;
+  padding: 1rem 2rem;
+  background-color: #ffe1e1;
+}
+#timeInput {
+  font-size: 1.8rem;
+}
+#convTime {
+  font-size: 1.5rem;
+}
+#copyMessage {
+  color: orangered;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: none;
+}
+#copyMessage:hover {
+  cursor: pointer;
+}
+#developer {
+  display: flex;
+  justify-content: space-around;
+}
+#reference {
+  width: 10rem;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: darkgreen;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-/* .message {
-  font-size: 3.5em;
-  font-weight: bold;
-  color: #4dbb3a;
-}
-.convert {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #4dbb3a;
-} */

@@ -1,0 +1,7 @@
+PING 182.236.10.243 (182.236.10.243) 56(84) bytes of data.
+64 bytes from 182.236.10.243: icmp_seq=1 ttl=54 time=23.4 ms
+64 bytes from 182.236.10.243: icmp_seq=2 ttl=54 time=21.9 ms
+
+--- 182.236.10.243 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 3ms
+rtt min/avg/max/mdev = 21.916/22.670/23.424/0.754 ms

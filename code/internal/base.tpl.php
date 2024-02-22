@@ -13,6 +13,10 @@
 </head>
 <body>
   <div id="main">
+    <h1>
+      <?php echo $title; ?>
+    </h1>
+    <p style="font-size:1.3rem;color:blueviolet;"><?php echo $sub_title;?></p>
     <p>
       <input id="timeInput" type="text" placeholder="hh:mm:ss">
       <button id="convTime" onclick="convertToSeconds()">変換</button>
@@ -23,53 +27,6 @@
     </p>
 
   </div> <!--  /main -->
-
-  <div id="developer"> <!--  For developers area -->
-    <button id="reference"  onclick="#">参考情報</button>
-  </div>
-  <p>
-    <?php
-      // pingコマンドを実行する
-      $cmd = "ping -c 1 google.com";
-      // 出力結果を配列に格納する
-      $output = array();
-      // ステータスを変数に格納する
-      $status = null;
-      // exec関数を呼び出す
-      $result = exec($cmd, $output, $status);
-      // ステータスを確認する
-      if ($status == 0) {
-      // 正常終了した場合
-      echo "pingコマンドが成功しました。<br/>";
-      // 出力結果を表示する
-      foreach ($output as $line) {
-      echo $line . "<br/>";
-      }
-      } else {
-      // 失敗した場合
-      echo "pingコマンドが失敗しました。<br/>";
-      // エラーメッセージを表示する
-      echo $result . "<br/>";
-      }
-    ?>
-
-    <?php
-      // passthru()関数でpingコマンドを実行する
-      $cmd = "ping -c 1 182.236.10.243";
-      // ステータスを変数に格納する
-      $status = null;
-      // passthru()関数を呼び出す
-      passthru($cmd, $status);
-      // ステータスを確認する
-      if ($status == 0) {
-      // 正常終了した場合
-      echo "pingコマンド成功 <br/>";
-      } else {
-      // 失敗した場合
-      echo "pingコマンド失敗 <br/>";
-      }
-    ?>
-  </p>
 
   <script>
     window.onload = function() {
